@@ -31,7 +31,7 @@ recognition.onresult = function(event) {
             document.querySelector('.NBA').style.fontSize = '20pt';
             document.querySelector('.NHL').style.fontSize = '20pt';
         }
-    } else if (command.includes('stats')) {
+    } else if (command.includes('stats')  || command.includes('scores')) {
         if(document.querySelector('.NBA').style.display === 'flex'){
             document.querySelector('#statsNBA').scrollIntoView({ behavior: 'smooth' });
         } else if(document.querySelector('.NHL').style.display === 'flex'){
